@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script  defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>EstiloCircular</title>
+
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-sm bg-body-tertiary"  data-bs-theme="dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Estilo Circular</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" >Home</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="formModalLabel">Formulário</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                
+                <form id="modalForm">
+                    <div class="mb-2">
+                        <label for="categoria" class="form-label">Categoria</label>
+                        <input type="text" class="form-control" id="categoria" name="categoria" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="estado" class="form-label">Estado do Usado</label>
+                        <input type="text" class="form-control" id="estado" name="estado" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="nota" class="form-label">Possui Nota Fiscal?</label>
+                        <textarea class="form-control" id="nota" name="nota"  required></textarea>
+                    </div>
+                    <div>
+                      <label for="email" class="form-label">Email para contato</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div>
+                    <label for="cidade" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="cidade" name="cidade" required>
+                  </div>
+
+                  <div> 
+                    <label for="phone" class="form-label">Telefone/Whatsapp</label>
+                    <input type="phone" class="form-control" id="telefone" name="phone" required placeholder="(xx) xxxxx-xxxx">
+                  </div>
+
+                  <div>
+                    <label for="usadoimg" class="form-label">Foto do Usado</label>
+                    <input type="file" class="form-control" id="usadoimg" name="usadoimg" required>
+                  </div>
+
+             </div>
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+  
+  
+  
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      
+      </div>
+      
+      
+      
+      <div class="carousel-item active item-h">
+        <img src="https://uselinus.com.br/cdn/shop/articles/pexels-rachel-claire-5490975_1500x1001_crop_bottom_eb75220b-081f-4b2f-a7f5-4659e6138bd2.jpg?v=1693577664" class="d-block w-100 img-h" alt="...">
+          <div class="carousel-caption d-none d-md-block mt-4 top-0">
+            <p class="fs-3 mt-5">Anuncie Roupas Usadas Aqui!</p>
+            <h1 class="display-1 fw-bolder text-capitalize">Estilo Circular</h1>
+            <button type="button" class="btn btn-primary px-4 py-2 fs-4 mt-5" data-bs-toggle="modal" data-bs-target="#formModal">Criar Anúncio</button>
+          </div>
+      </div>
+      <div class="carousel-item item-h">
+        <img src="https://dicas.olx.com.br/wp-content/uploads/2021/09/ROUPAS_USADAS_OLX_SEPARE_AS_ROUPAS-1024x576.png" class="d-block w-100 img-h" alt="...">
+          <div class="carousel-caption d-none d-md-block mt-4 top-0">
+            <p class="fs-3 mt-5">Anuncie Roupas Usadas Aqui!</p>
+            <h1 class="display-1 fw-bolder text-capitalize">Estilo Circular</h1>
+            <button type="button" class="btn btn-primary px-4 py-2 fs-4 mt-5" data-bs-toggle="modal" data-bs-target="#formModal">Criar Anúncio</button>
+          </div>
+      </div>
+      <div class="carousel-item item-h">
+        <img src="https://super.abril.com.br/wp-content/uploads/2021/05/SI_427_ORCL_roupas-nao-vendidas_site.jpg?quality=90&strip=info&w=720&h=440&crop=1" class="d-block w-100 img-h" alt="...">
+        <div class="carousel-caption d-none d-md-block mt-4 top-0">
+          <p class="fs-3 mt-5">Anuncie Roupas Usadas Aqui!</p>
+          <h1 class="display-1 fw-bolder text-capitalize">Estilo Circular</h1>
+          <button type="button" class="btn btn-primary px-4 py-2 fs-4 mt-5" data-bs-toggle="modal" data-bs-target="#formModal">Criar Anúncio</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+</main>
+
+
+<footer class="bg-dark text-white mt-5 p-4 text-center">
+  <div class="container mt-5">
+      <div class="row">
+          <div class="col-md-4 mb-3">
+              <h5>Sobre Nós</h5>
+              <p>Somos uma corporação destinada a facilitar a troca de peças usadas entre nossos usuários</p>
+          </div>
+          <div class="col-md-4 mb-3">
+              <h5>Links Úteis</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Página Inicial</a></li>
+              </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+              <h5>Contato</h5>
+              <p>Email: EstiloCircular099@gmail.com</p>
+              <p>Telefone: (55) 44 99831-8984</p>
+          </div>
+      </div>
+  </div>
+  <div class="mt-3">
+      &copy; 2024 EstiloCircular. Todos os direitos reservados.
+  </div>
+</footer>
+
+</body>
+</html>

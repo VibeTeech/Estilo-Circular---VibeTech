@@ -1,0 +1,9 @@
+.item-h {
+    height: 480px
+}
+
+.img-h {
+height: 100%;
+object-fit: cover;
+filter: brightness(0.6);
+}
